@@ -69,3 +69,6 @@ String buffer & String builder => create mutable string, and both of them can be
 ======================
 static
 share by all of every object in the class, once we change the value, all of objects which are use that variable will affect with that
+static block, will only called once although the object is used so many times
+if we use static class, we can't use non static variable in.
+in the main class, we use static because we don't need call the name of class to run main in the first time we run the program

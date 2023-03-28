@@ -25,6 +25,15 @@ class Mobile {
     int price;
     static String name;
 
+    static {
+        name = "Phone";
+    }
+
+    public Mobile() {
+        brand = "";
+        price = 200000;
+    }
+
     public void show() {
         System.out.println(brand + " " + price + " " + name);
     }
