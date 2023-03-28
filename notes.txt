@@ -1,0 +1,71 @@
+basic fundamental
+java code => compiler => byte code => jvm.
+jvm will only execute 1 file that contain : public static void main(String a[]), and the rest will be executed as in that file.
+name of class cant be prefix with number, must be same with name of file and must be has extension .java
+to compile program :
+1. terminal => javac name_file.java
+2. using debug in the top
+variable :
+1. String
+2. int
+
+Data type :
+primitive =>
+1. integer => byte (1 bytes), short (2 bytes), int (4 bytes), long (8 bytes)
+2. float => float (4 bytes), double (8 bytes)
+3. character => char (2 bytes)
+4. boolean => true or false
+
+1 bytes maximum is 128;
+
+conversion and casting
+conversion  => change type of data directly
+casting => change type of data with describe the type of data
+type promotion => change type of data in the result of operation when the result cant match with the type of data
+
+operational operator
+< , > , == , != , <= , >=
+
+logical operator
+and => &&
+or => ||
+not => !
+
+conditional operator
+if - else
+if - else if - else
+ternary operator => only can be used for get the result, not doing something (assign data)
+switch
+
+looping
+loop - while => execute code if the condition is true
+do while => execute code minimum once when the condition is false
+for
+
+======================
+object
+object have properties and behaviors (what it can do)
+object = pen
+properties = color, merk
+behaviors = write
+
+to call the method in other class, we must declare the class first as object in the class which is called
+
+======================
+array
+int arrVal[] = {5,6,7};
+multi dimensional array
+int multiArr[][]= new int [3][4]
+jaged array => array which has no same length between array one and other
+array of objects => array that contain object value
+
+======================
+String
+Basically, String is an object that consume hype memory. When we insert value to String variable, the value can't be changed. ACtually, when we manipulated the value, java only change the address memory that refers for the value in the hype memory.
+mutable string => can change the string
+immutable string => can't change the string
+String buffer & String builder => create mutable string, and both of them can be manipulated with so many methods 
+
+======================
+static
+share by all of every object in the class, once we change the value, all of objects which are use that variable will affect with that
