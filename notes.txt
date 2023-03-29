@@ -108,3 +108,7 @@ the object that only can be used once
 =================
 inheritance
 copy the feature from the super class
+to get inheritance from other class, we can use extends [class name].
+class after extends is super class
+to get inheritance from multiple classes, we can extends step by step. It means we extends class in the upper class, and then extends that class
+Multiple inheritance will not work in java since it ambiguity
