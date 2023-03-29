@@ -78,3 +78,33 @@ encapsulation
 private => only can be accessed in the same class
 to access the var private, we can create method to collect the var and use the method in other class. The method should be has prefix get (getter)
 to assign value to the var private, we can create method to assign the var and use the method in other class. The method should be has prefix set (setter)
+
+=======================
+this => it refers to the object which is used
+
+=======================
+constructor => when we creating an object, the default value will be null (string) & 0 (int). We can change it using constructor
+constructor name must be same with class name.
+constructor never refers anything
+constructor will be always called when we create an object
+
+================
+Super & this
+super class can be called by using extends. When we crete an object, the super class in the object will be called automatically.
+every constructor has super() => call the constructor for the super class.
+every class will extends Object class
+this => will be call default method in the class
+
+=================
+Name Convention
+class and interface =>Capitalize. Calc, Runable
+variable and method => CamelCase. marks, show()
+constats => All Capitalize. PIE, BRAND
+
+=================
+anonymous object
+the object that only can be used once
+
+=================
+inheritance
+copy the feature from the super class
