@@ -112,3 +112,93 @@ to get inheritance from other class, we can use extends [class name].
 class after extends is super class
 to get inheritance from multiple classes, we can extends step by step. It means we extends class in the upper class, and then extends that class
 Multiple inheritance will not work in java since it ambiguity
+
+=================
+method overiding
+the method in child class will be the first priority. If 2 classes have same method, the method that will be executed is the method in the child class, not in the extends class
+
+================
+Packages = folder
+Placing the file into seperated folder
+declare package [name_folder]; in the top of codes
+when we want to use that file, we must import it. import [name_folder].[name_class];
+when we want to import all of classes in the package, we can use star => import [name_folder].*;
+star means => import all of files, not folder.
+
+================
+access modifiers
+public => can be accessed anywhere
+when we import file from different package, and want to access method that has no public, it will not possible to do
+private => it can only be used in the same class
+default => it can be accessed in the same class, same package subclass, and same package non-subclass
+protected => it can be user in same class, same package subclass, same package non subclass, different package subclass
+tips => one file one class, class is public, variable is private, method is public, don't use default
+
+=================
+Polymorphism => The situation change the behavior
+1. compile time Polymorphism => overloading 
+2. run time Polymorphism => overiding
+
+dynamic method dispatch => the method that will be called is different based on the object that is initiated
+
+=================
+final
+final in variable => the value will be constant/cant change the value
+final in method =>  the class can't be overiding
+final in class => the class cant be extended
+
+=================
+object class => every class in java, ACtually extends the object class => every time we print obj, it will call toString method in the object class that return getclass().getName() + hexadecimal.
+
+=================
+Downcasting & Upcasting
+Typecasting => change the type of data
+double a = 2,7;
+int b = (int) a; => this is type casting
+
+Upcasting => when we want to casting a class in the super class
+A obj = (A) new B();
+
+Downcasting => when we want to casting to child class
+A obj = new B();
+B obj1 = (B) obj;
+
+==================
+wrapper class => for every primitive type of variable, we are going have a class for it
+autoboxing => store the primitive value to the object
+auto-unboxing => take out the value from the object
+
+==================
+abstract keyword
+abstract class make the sub class which extend the class must has the method with the type of abstract.
+abstract method can only be declared in the abstract class
+abstract class possible to not has abstract method.
+abstract class cant be called in the main class/can't make the object from abstract class
+if we dont want to implement all of the abstract methods in the main class, we must make the class to be abstract also
+
+=====================
+Inner class => class in the class
+to create object from inner class, we must declare object from outter class, or we must using static for the inner class 
+
+=====================
+anonymous class => create class without name, only declare the method. It's similar enough with anonymous function to use it.
+
+=======================
+abstract and anonymous inner class => combine three of them into one implementation
+with it, we can possible to create object from abstract class
+
+=======================
+interface => this is like a class, but by default all the methods in is abstract.
+interface show us what method we must be implement in the class.
+to use the interface, use implements
+all variable in the interface by default is final and static
+we can implement multiple interfaces
+inheritance in interface is possible, with using extend
+
+summary :
+class -> class = extend
+interface -> class = implements
+interface -> interface = extend
+
+========================
+Enum => name of constant
