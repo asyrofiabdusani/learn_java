@@ -202,3 +202,72 @@ interface -> interface = extend
 
 ========================
 Enum => name of constant
+enum possible to be compare using if and switch
+enum can't be extended in other classes
+
+========================
+anotation => has prefix @
+@override =etc> comparing
+
+
+========================
+functional interface new => make sure the interface only has method
+add anotation @functionalInterface
+
+========================
+Lambda expression => declare funtional interface with shorter code
+lambda only work with functional interface
+
+=========================
+type interface
+1. normal => has multiple methods
+2. functional interface/SAM (Single abstract method) => has one method
+3. marker => create blank interface. It will be used for deserialitation/store value to hardware memory
+
+==========================
+Exception
+*Error
+1. Compile time error => the error happen in the compile time, like typo in syntaks, etc
+2. logical error/bug => the output is not like our prediction
+3. runtime error => the code just stop working => exception handling
+
+handling exception
+normal statements
+critical statements
+
+try{
+    j=18/i;
+} catch(exception e){
+    System.out.println(something);
+}
+=>
+hi java, try to run the code, and if there is error catch the exception.
+catch block only executed when there is error
+
+try multiple catch
+if there is exception that is executed in the first row, it will jump directly to the catch. So the next exception will be not executed
+catch has some type => aritmathicException, arrayIndexoutofboundexception, etc.
+the default exception is Catch(Exception e) to catch the rest of excpetion.
+default exception can't be put at the top of other type of exception.
+
+hirarchy exception
+object class => Throwable =>
+1. Exception =>
+1.1 runtime exception =>
+1.1.1 aritmathicException
+1.1.2. arrayIndexoutofboundexception
+1.1.3. etc
+2. sequre exception
+2.1 Error =>
+2.1.1. Thread error
+2.1.2. IO error
+
+Exception throw keyword
+we can use throw to send the exception and it will can be catch. 
+Throw also can be put the parameter
+
+Custom Exceptions
+create custom_excpetion which extends exception class.
+and use super to give params
+
+Ducking exceptions using throws => make the exception being handled by other class
