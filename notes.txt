@@ -271,3 +271,71 @@ create custom_excpetion which extends exception class.
 and use super to give params
 
 Ducking exceptions using throws => make the exception being handled by other class
+never put throws in the main
+
+=========================
+Buffered and scanner
+BufferedReader => class which provide i/o which accept reader for the param
+InputStreamReader => class which is used to create reader
+BuffereddReader => accept input not only from anywhere, like a file, etc
+always close BufferedReader after use it
+Scanner => class to accept input.
+
+==========================
+Try with resource
+try can be used with finally with or ewithout catch
+finally => the process in the finally will be executed even it throw error or not
+
+=========================
+Threads => in the same time, the app divide the task to smallest process
+Multiple threads =>  crating many threads and execute in the same time
+
+Step to create threads :
+1. extends class with thread
+2. call the object of class with method start
+3. create method run in the method, so when start is called, the method run will be running
+
+Thread priority => control scheduler to give priority to thread.
+The range is 1 -10, or min, max, default. The default is 5
+firstThread.setPriority(Thread.MAX_PRIORITY);
+
+Thread sleep => asking thread to wait/hold the process
+
+Runnable => the extended class which can be ised to create thread
+steps :
+1. create class implement Runnable
+2. create object from class Runnable with class is created class
+3. Create object from thread class with param is object for runnable class
+4. run method start in the thread class
+
+try to using thread with immutable, since the thread might be execute the same process at the same time.
+if we want make mutable only can be executed 1 time at the time, just put synchronized before type of method
+
+=============================
+//? IMPORTANT => ALWAYS PUT OTHER CLASS IN TOP OF MAIN CLASS
+
+=============================
+Thread States
+
+New -> start() -> Runnable -> run() -> Running -> sleep()/wait() -> Waiting -> notify() -> Runnable -> run() -> Running -> stop() -> Dead
+
+=============================
+Collection API -> concept
+Collection -> interface -> List (ArrayList, LinkedList), Queue (DeQueue), Set (HashSet)
+Collections -> class
+
+if we work with array with specific index, use List
+Set support unique value. Set didn't give value in sort format and don't support index value.
+if we want to sort set, use TreeSet
+Map => similar with associate array, that is key and value. Key is unique and can't be repeated. Use put to add new value for Map, so it will replace when we accidentally add similar key
+
+==============================
+Comparator & Comparable
+Comparator => interface which is used to our logic to sort the list
+Comparable => extended class which is used to compare some values
+
+=============================
+streamAPI
+The foreach like in js can be able to used to java
+Stream => interface which can be used to manipulate data in array list but the value in the origin willn't be changed
+Stream can accept operating parameter
